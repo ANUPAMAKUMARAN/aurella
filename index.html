@@ -20,52 +20,128 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body  class="bg-pink-100">
     <!-- home -->
-    <div class="bg-[url('https://t3.ftcdn.net/jpg/04/14/40/48/360_F_414404865_LpyPc31bZOa9ggokJH51rkinpqukT2Ee.webp')]  w-full h-screen bg-no-repeat bg-cover">
-         <nav >
-            <div class="w-full bg-gray-900 flex justify-center items-center fixed flex-col">
-            
-              <h1 class="text-6xl text-orange-200">Aurella Vogue</h1>
-              <p class="text-xs text-red-300">world wide shipping</p>
-              <ul class="flex text-white flex justify-center items-center w-full space-x-8 ">
-                <li class="text-sm hover:text-yellow-300 hover:cursor-pointer">BRIDESMAID</li>
-                <li class="text-sm hover:text-yellow-300 hover:cursor-pointer">WEDDING GUEST</li>
-                <li class="text-sm hover:text-yellow-300 hover:cursor-pointer">BRIDESMOM</li>
-                <li class="text-sm hover:text-yellow-300 hover:cursor-pointer">PARTY</li>
-                <li class="text-sm hover:text-yellow-300 hover:cursor-pointer">MATERNITY</li>
-                <li class="text-sm hover:text-yellow-300 hover:cursor-pointer">PLUS SIZE</li>
-                <li class="text-sm hover:text-yellow-300 hover:cursor-pointer">FORMALS & EVENING</li>
-            </ul>
-            </div>
-          
-         </nav>
-         <div class="flex justify-center items-center w-full flex-col pt-80">
-            <h1 class="text-8xl p-4">Fashion fades</h1>
-            <h2 class="text-3xl">only style remains the same</h2>
-
-         </div>
-    </div>
-    <!-- category -->
-     <div class="w-full flex justify-center items-center flex-col">
-        <h1 class="text-4xl mt-20">TRENDING CATEGORIES</h1>
-        <div class="md:grid grid-cols-3 w-full mt-20 ">
-            <div class="p-8">
-                <h1 class="text-3xl text-center mb-2">Formal Gowns</h1>
-                <img src="https://img.perniaspopupshop.com/catalog/product/t/s/TSBG012328_1.JPG?impolicy=listingimagenew" class="w-full h-full">
-            </div>
-            <div class="p-8">
-                <h1 class="text-3xl text-center mb-2">Dresses</h1>
-                <img src="https://m.media-amazon.com/images/I/711PtImQcNL._AC_UY350_.jpg" class="w-full h-full">
-            </div>
-            <div class="p-8">
-                <h1 class="text-3xl text-center mb-2">Bridesmaid Gowns</h1>
-                <img src="https://i.pinimg.com/originals/75/4d/ba/754dba9fae370799313a5c71611977ac.jpg" class="w-full h-full">
-            </div>
-
+    <nav class="flex justify-between items-center p-6 bg-neutral-200 shadow-md">
+        <div class="text-xl font-bold">AURELLA</div>
+        <ul class="flex space-x-8">
+          <li><a href="#" class="hover:text-neutral-600">Home</a></li>
+          <li><a href="#" class="hover:text-neutral-600">Collections</a></li>
+          <li><a href="#" class="hover:text-neutral-600">Brands</a></li>
+          <li><a href="#" class="hover:text-neutral-600">About Us</a></li>
+        </ul>
+        <div class="space-x-4">
+          <button class="text-neutral-600 hover:text-neutral-800"><i class="fa fa-shopping-cart"></i></button>
+          <button class="text-neutral-600 hover:text-neutral-800"><i class="fa fa-user"></i></button>
         </div>
+      </nav>
+    
+      <!-- Hero Section -->
+      <div class="flex flex-col lg:flex-row items-center max-w-7xl mx-auto py-16 px-6 lg:space-x-12">
+        <!-- Text Content -->
+        <div class="lg:w-1/2">
+          <h1 class="text-5xl font-bold mb-6">Elevate Style,<br>Embrace Story</h1>
+          <p class="text-lg text-neutral-600 mb-8">
+            We provide the largest clothing collection for any season. You can choose items to match your style and preferences. Our services ensure that you always step out with confidence.
+          </p>
+          <button class="px-6 py-3 bg-neutral-800 text-white rounded-lg hover:bg-neutral-700">Explore</button>
+        </div>
+        <!-- Image Content -->
+        <div class="lg:w-1/2 mt-12 lg:mt-0">
+          <div class="relative">
+            <img src="https://media.istockphoto.com/id/1995160644/photo/wide-angle-shot-of-gen-z-group-of-friends-hanging-out-together.webp?a=1&b=1&s=612x612&w=0&k=20&c=ZK8eM5FO0e5VTiCIyMBPsJyJFPCz1B6YJDhNmp3Teig=" alt="Model" class="rounded-lg shadow-lg">
+            <div class="absolute top-0 left-0 w-40 h-40 bg-neutral-200 rounded-full -translate-x-8 -translate-y-8"></div>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Trending Collections Section -->
+      <div class="max-w-7xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold mb-8">Trending Collections</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Collection Item -->
+          <div class="relative bg-neutral-200 p-6 rounded-lg shadow-lg">
+            <img src="https://media.istockphoto.com/id/2170496135/photo/golden-hour-greeting.webp?a=1&b=1&s=612x612&w=0&k=20&c=JTV6L3Z3cSFU2iQQzT4F6U_MfZuDU6pKrwY5XP9Klt0=" alt="Collection 1" class="rounded-lg mb-4">
+            <h3 class="text-xl font-semibold mb-2">Summer Collection</h3>
+            <p class="text-neutral-600">Bright and breezy styles for the sunny season.</p>
+            <button class="mt-4 px-4 py-2 bg-neutral-800 text-white rounded-lg hover:bg-neutral-700">Explore</button>
+          </div>
+          <!-- Collection Item -->
+          <div class="relative bg-neutral-200 p-6 rounded-lg shadow-lg">
+            <img src="https://images.unsplash.com/photo-1484327973588-c31f829103fe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Collection 2" class="rounded-lg mb-4">
+            <h3 class="text-xl font-semibold mb-2">Winter Collection</h3>
+            <p class="text-neutral-600">Cozy and chic outfits for cooler days.</p>
+            <button class="mt-4 px-4 py-2 bg-neutral-800 text-white rounded-lg hover:bg-neutral-700">Explore</button>
+          </div>
+          <!-- Collection Item -->
+          <div class="relative bg-neutral-200 p-6 rounded-lg shadow-lg">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D" alt="Collection 3" class="rounded-lg mb-4">
+            <h3 class="text-xl font-semibold mb-2">Fall Collection</h3>
+            <p class="text-neutral-600">Elegant layers for the season of change.</p>
+            <button class="mt-4 px-4 py-2 bg-neutral-800 text-white rounded-lg hover:bg-neutral-700">Explore</button>
+          </div>
+        </div>
+      </div>
 
-     </div>
+   
+    <!-- category -->
+    <div class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center px-6 py-16">
+        <!-- Text Content -->
+        <div class="lg:w-1/2 text-center lg:text-left">
+          <p class="text-pink-700 font-bold uppercase tracking-wide">Up to 65% Off</p>
+          <h1 class="text-4xl font-bold mt-4">Enjoy your Shopping</h1>
+          <p class="mt-4 text-gray-600">Shop now and grab the best deals!</p>
+          <button class="mt-6 px-6 py-3 bg-pink-600 text-white rounded-lg hover:bg-pink-500">Shop Now</button>
+          <!-- Social Icons -->
+          <div class="flex justify-center lg:justify-start mt-6 space-x-4 text-gray-600">
+            <a href="#" class="hover:text-gray-800"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-gray-800"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-gray-800"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <!-- Image Content -->
+        <div class="lg:w-1/2">
+          <img src="https://media1.giphy.com/media/WPnysWAaxHlRL19Li6/giphy.gif" alt="Shopping Woman" class="rounded-lg">
+        </div>
+      </div>
+    </div>
+  
+    <!-- Editor's Pick Section -->
+    <div class="max-w-7xl mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">TRENDING CATEGORIES</h2>
+      <div class="flex justify-center space-x-4 mb-6">
+        <button class="px-4 py-2 bg-pink-600 text-white rounded-md hover:bg-pink-500">Featured</button>
+        <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300">On Sale</button>
+        <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300">Top Rated</button>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="https://img.tobi.com/product_images/md/1/white-shannan-lace-skater-dress.jpg" alt="Product 1" class="w-full rounded-md mb-4">
+          <h3 class="text-lg font-semibold">Loreda Skater Dress</h3>
+        
+        </div>
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="https://i.pinimg.com/236x/a2/62/10/a26210d5c9ddf7d9191bf0285a7f72c2.jpg" alt="Product 2" class="w-full rounded-md mb-4">
+          <h3 class="text-lg font-semibold">Style Modern Dress</h3>
+        
+        </div>
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/dress/j/e/4/l-rani-chameli-rayon-dress-aproach-collection-original-imagkfeuxv6bbwna.jpeg?q=90&crop=false" alt="Product 3" class="w-full rounded-md mb-4">
+          <h3 class="text-lg font-semibold">Metro Skater Dress</h3>
+         
+        </div>
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="https://i.pinimg.com/736x/7e/9b/b8/7e9bb8bf90666add0563a1eebbba919c.jpg" alt="Product 4" class="w-full rounded-md mb-4">
+          <h3 class="text-lg font-semibold">Flower Print Dress</h3>
+          
+        </div>
+      </div>
+
+     
      <!-- new -->
       <div class="w-full flex justify-center items-center flex-col">
         <h1 class="text-4xl mt-20">NEW ARRIVALS</h1>
@@ -121,7 +197,7 @@
     
         <div>
             <h1 class="text-xl mb-3">About us</h1>
-            <h1 class="text-3xl mb-3 text-orange-200">Aurella Vogue</h1>
+            <h1 class="text-3xl mb-3 text-dark-200">AURELLA</h1>
             <p>ph:2387463065</p>
         </div>
         
